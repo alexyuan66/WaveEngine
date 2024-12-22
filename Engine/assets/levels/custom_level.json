@@ -1,0 +1,1206 @@
+{
+    "config": {
+        "gravity": 0.7,
+        "player_speed": 4,
+        "cell_size": 48,
+        "level_width": 100,
+        "audio": "assets/sound/lost_rap.wav",
+        "sprite_map": {
+            "Player": "assets/images/player.json",
+            "Square": "assets/images/square.json",
+            "Triangle": "assets/images/triangle.json",
+            "Finish": "assets/images/flag.json",
+            "Bouncer": "assets/images/bouncer.json",
+            "GravityFlipper": "assets/images/gravityflipper.json",
+            "SizeFlipper": "assets/images/sizeflipper.json"
+        }
+    },
+    "objects": [
+        {
+            "x": 8,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 10,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 11,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 12,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 15,
+            "y": 2,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 17,
+            "y": 6,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 16,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 18,
+            "y": -1,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 19,
+            "y": -1,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 20,
+            "y": -1,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 20,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 21,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 15,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 18,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 20,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 22,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 22,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 22,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 22,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 23,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 24,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 25,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 26,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 23,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 24,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 25,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 26,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 26,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 25,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 24,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 23,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 24,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 25,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 27,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 27,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 27,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 27,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 28,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 28,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 28,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 28,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 25,
+            "y": 4,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 25,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 29,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 29,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 29,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 30,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 30,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 31,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 32,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 1
+        },
+        {
+            "x": 38,
+            "y": 0,
+            "obj_name": "Bouncer",
+            "angle": 0,
+            "bounce_height": 18.5
+        },
+        {
+            "x": 19,
+            "y": 5,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 21,
+            "y": 6,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 25,
+            "y": 8,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 10,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 39,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 40,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 41,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 41,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 41,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 42,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 43,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 41,
+            "y": 3,
+            "obj_name": "Bouncer",
+            "angle": 0,
+            "bounce_height": 18.5
+        },
+        {
+            "x": 44,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 44,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 44,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 48,
+            "y": -1,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 44,
+            "y": 5,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 45,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 46,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 47,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 48,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 49,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 50,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 45,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 46,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 47,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 48,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 49,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 50,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 50,
+            "y": 8,
+            "obj_name": "Bouncer",
+            "angle": 2,
+            "bounce_height": 18.5
+        },
+        {
+            "x": 51,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 52,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 51,
+            "y": 8,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 52,
+            "y": 8,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 53,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 54,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 55,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 56,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 56,
+            "y": 8,
+            "obj_name": "GravityFlipper",
+            "angle": 2
+        },
+        {
+            "x": 57,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 58,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 59,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 60,
+            "y": 9,
+            "obj_name": "Triangle",
+            "angle": 2
+        },
+        {
+            "x": 51,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 52,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 53,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 54,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 55,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 56,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 57,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 57,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 57,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 57,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 44,
+            "y": 3,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 58,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 58,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 58,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 58,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 60,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 60,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 60,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 59,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 59,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 59,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 62,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 62,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 62,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 61,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 61,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 61,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 59,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 60,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 61,
+            "y": 3,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 62,
+            "y": 3,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 63,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 63,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 63,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 63,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 64,
+            "y": 3,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 65,
+            "y": 3,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 64,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 64,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 64,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 65,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 65,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 65,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 66,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 66,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 66,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 66,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 66,
+            "y": 4,
+            "obj_name": "Bouncer",
+            "angle": 0,
+            "bounce_height": 25.0
+        },
+        {
+            "x": 72,
+            "y": 4,
+            "obj_name": "GravityFlipper",
+            "angle": 0
+        },
+        {
+            "x": 73,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 74,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 75,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 67,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 68,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 69,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 70,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 71,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 72,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 73,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 74,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 75,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 76,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 77,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 78,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 79,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 80,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 0
+        },
+        {
+            "x": 80,
+            "y": 8,
+            "obj_name": "Finish",
+            "angle": 2
+        },
+        {
+            "x": 81,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 82,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 9,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 8,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 7,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 6,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 5,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 4,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 3,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 2,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 1,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 83,
+            "y": 0,
+            "obj_name": "Square",
+            "angle": 2
+        },
+        {
+            "x": 82,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 81,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 80,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 79,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 78,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 77,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        },
+        {
+            "x": 76,
+            "y": 0,
+            "obj_name": "Triangle",
+            "angle": 0
+        }
+    ]
+}

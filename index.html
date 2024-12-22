@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Engine | Polygon Dash</title>
+  <style>
+    @font-face {
+      font-family: 'Arcade';
+      src: url('Engine/assets/fonts/arcade.TTF') format('truetype');
+    }
+
+    body {
+      margin: 20px;
+      padding: 0;
+      background-color: #c8c8c8;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    h1 {
+      font-family: 'Arcade', sans-serif;
+      font-size: 4em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      font-size: 2em;
+      font-family: 'Arcade', sans-serif;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    p, h3 {
+      text-align: left;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    video {
+      margin: 20px 0;
+    }
+
+    /* Style for the fixed 2x3 grid of screenshots */
+    .game-screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .game-screenshot-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 2px solid #444;
+      border-radius: 5px;
+    }
+
+    .diagram img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin-top: 20px;
+      border: 2px solid #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wave Engine — Polygon Dash</h1>
+  <p><strong>Team Members:</strong> Alex Yuan, Addison Goolsbee, Matthew Qiu, Rylan Polster</p>
+
+  <h2>Video</h2>
+  <video controls>
+    <source src="media/wave_engine_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Screenshots</h2>
+  <div class="game-screenshot-grid">
+    <img src="media/menu.png" alt="Screenshot showing the main menu">
+    <img src="media/levels.png" alt="Screenshot showing the level menu">
+    <img src="media/play5.png" alt="Screenshot showing the level menu">
+    <img src="media/play4.png" alt="Screenshot showing the start of level 1">
+    <img src="media/play6.png" alt="Screenshot showing the player in the middle of level 1">
+    <img src="media/play7.png" alt="Screenshot showing the player at the end of level 1">
+    <img src="media/gui.png" alt="Screenshot showing the player in the middle of level 2">
+    <img src="media/gui2.png" alt="Screenshot showing the player in the middle of level 2">
+  </div>
+
+  <h2>Documentation</h2>
+  <p>
+    <a href="docs/annotated.html">
+      <strong>Link to documentation site</strong>
+    </a>
+  </p>
+
+  <h2>Engine Architecture</h2>
+  <div class="diagram">
+    <img src="media/engine_architecture.png" alt="Diagram showing the engine architecture">
+  </div>
+
+  <h2>Binary</h2>
+  <p>
+    <a href="Engine.zip" download>
+      <strong>Download Mac and Linux Binaries with Source Code</strong>
+    </a>
+  </p>
+  <p>
+    The instructions to compile/run the game and the GUI are located in README.txt within the Engine/ folder of the this download.
+  </p>
+
+  <h2>Post-Mortem</h2>
+  <p>If we had an additional 8 weeks to work on this project, we would allocate this extra time to push for a few major improvements. The first major improvement we would make is to add "layers" to our tile editor in our game engine UI. We implemented parallax inside the engine itself to have cool backgrounds for levels, but we realized that this parallax clashed with our grid-based tile system that we used to represent levels and serialize/deserialize them. Furthermore, since the game engine UI level editor uses a grid system, we would have to represent background parallax another way. The improvement would be to implement layer tabs in the level editor with a boolean flag that allows you to designate layers as grid or non-grid layers. The non-grid layers could be used to place background objects for parallax effects in your level while the grid layers would be used to place the normal game tiles. This was an oversight in the original design of our GUI that we didn't consider the complexity of until the end of the project.</p>
+  <p>The second major improvement that we would undertake is complex tile movement patterns. Taking inspiration from our 2D platformer games like Mario, many of the enemies there have complex movement patterns (they move in rings, they automatically detect when they can jump upwards to another tile, or they follow the player). While we have a very in-depth gravity manipulation system, we do not have the capacities currently to support the creation of these complex movement patterns of enemy game objects within our GUI interface. We would make the improvement by adding a way for users to easily perform custom movement scripting and custom AI scripting at the GUI-level to enable this functionality. This would definitely require more heavy-duty work on the interface between our D engine code and our Python GUI code.</p>
+  <p>In terms of tooling, there is also the consideration that if we had more time, we would switch away from Python for the GUI development. While it allows for quick iteration, as the complexity of the project has grown, so has the difficulty of the lack of strict typing. Upon reflection, the time saved by using Python for GUI development via its fast iteration was probably balanced out by the numerous bugs that come as baggage with using a dynamically typed language like Python. Ultimately, the code would be more easily understandable to an outside observer if it was a strongly typed language rather than a dynamically typed language, and it would likely enable better scalability with respect to compounding complexity as our engine expanded with the new features we mentioned before.</p>
+
+  <footer>
+    &copy; 2024 Wave Engine | All rights reserved.
+  </footer>
+</body>
+</html>

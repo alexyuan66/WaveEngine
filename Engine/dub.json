@@ -1,0 +1,29 @@
+{
+	"authors": [
+		"Addison Goolsbee",
+		"Alex Yuan",
+		"Some other people I guess"
+	],
+	"copyright": "Copyright © 2023, mike",
+	"dependencies": {
+		"bindbc-sdl": "~>1.5.0"
+	},
+	"versions": [
+		"SDL_TTF_2012",
+		"SDL_2016",
+		"BindSDL_Mixer"
+	],
+	"lflags-osx": [
+		"-F/Library/Frameworks",
+		"-framework",
+		"SDL2",
+		"-framework",
+		"SDL2_mixer",
+		"-framework",
+		"SDL2_ttf",
+		"-Wl,-rpath,/Library/Frameworks"
+	],
+	"description": "Wave Engine",
+	"license": "proprietary",
+	"name": "prog_sdl"
+}

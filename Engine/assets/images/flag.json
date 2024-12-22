@@ -1,0 +1,10 @@
+{
+"filepath":"./assets/images/flag.bmp",
+  "format":{
+    	"width"		: 64,
+    	"height"	: 256,
+    	"tileWidth"	: 64,
+    	"tileHeight": 64
+  }
+}
+

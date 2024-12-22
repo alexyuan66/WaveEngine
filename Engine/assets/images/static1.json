@@ -1,0 +1,9 @@
+{
+    "filepath": "./assets/images/static1.bmp",
+    "format": {
+        "width": 64,
+        "height": 256,
+        "tileWidth": 64,
+        "tileHeight": 64
+    }
+}

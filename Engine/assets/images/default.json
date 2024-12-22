@@ -1,0 +1,10 @@
+{
+    "filepath":"assets/images/default.bmp",
+    "format":{
+            "width"		: 128,
+            "height"	: 256,
+            "tileWidth"	: 128,
+            "tileHeight": 64
+    }
+}
+    

@@ -1,0 +1,10 @@
+{
+    "filepath":"./assets/images/custom.bmp",
+    "format":{
+            "width"		: 196,
+            "height"	: 256,
+            "tileWidth"	: 196,
+            "tileHeight": 64
+    }
+}
+    
