@@ -2,6 +2,7 @@
 A versatile game engine designed to create dynamic, user-driven experiences, including customizable Polygon (Geometry) Dash games.
 
 To access access this program, first download Engine.zip
+
 ---
 
 ## Instructions to compile/run the Polygon Dash game:
@@ -13,6 +14,7 @@ dub
 
 #### **MAC**:
 dub --compiler=ldc2
+
 ---
 
 ### Using Precompiled Binaries:
@@ -28,7 +30,6 @@ dub --compiler=ldc2
 ## Instructions to Run the Level Editor Engine GUI
 
 ### Linux:
-Type the following commands in the terminal:
 
 sudo apt-get install python3-tk python3-pil python3-pil.imagetk
 
@@ -37,7 +38,6 @@ python3 gui.py
 ---
 
 ### Mac:
-Type the following commands in the terminal:
 
 brew install tcl-tk
 
