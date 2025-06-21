@@ -1,5 +1,5 @@
 # Wave Engine
-A versatile game engine designed to create dynamic, user-driven experiences, including customizable Polygon (Geometry) Dash games.
+A versatile game engine and GUI that can be used to play Polygon (Geometry) Dash and create customized levels.
 
 To access access this program, first download Engine.zip
 
